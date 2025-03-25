@@ -1,0 +1,22 @@
+Importante a partir do minuto 51:00 da video aula
+
+- A imagem é uma função de intensidade bidimencional: f(x,y) onde: f é a amplitude e e,y são as coordenadas especificas;
+- Na imagem digital f, x e y assumem valores discretos
+- Sejam M e N o numero de linhas e colunas da imagem e L o numero discreto de niveis de intensidade retornado pela função f. Então 0 <= x <= N - 1; 0 <= y <= M - 1, definem a AMOSTRAGEM da imagem digital e
+0 <= f(x,y) <= L - 1, define a QUANTIZAÇÃO 
+    - Isso quer dizer que a imagem digital será composta por M × N pixels, cada um localizado em uma posição (x, y).
+    - Exemplo: Se L = 256, temos níveis de 0 a 255 → comum em imagens de 8 bits (escala de cinza).
+- Por questões de hardware, o numero de niveis de intensidade costuma ser uma potencia de 2: L = 2^k
+
+    -------------------------------------------------------------------------------------------------------
+    | Bits (k) | Níveis de intensidade (L = 2^k) | Tipo de imagem                                         |
+    -------------------------------------------------------------------------------------------------------
+    | 1	       | 2	                             | Preto e branco (binária)                               |
+    | 2	       | 4	                             | Tons simples de cinza                                  |
+    | 8	       | 256	                         | Imagem em escala de cinza                              |
+    | 24       | 16.777.216	                     | Imagem colorida RGB (8 bits por canal: 3 × 8 = 24)     |
+    -------------------------------------------------------------------------------------------------------
+
+- O numero de bits necessarios para o armanezamento da imagem é b = M x N x k
+    - Exemplo: 512 linhas (M = 512), 512 colunas (N = 512), 8 bits por pixel (k = 8):
+        - b = 512 x 512 x 8
