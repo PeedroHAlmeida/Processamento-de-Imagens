@@ -9,12 +9,12 @@ Importante a partir do minuto 51:00 da video aula
 - Por questões de hardware, o numero de niveis de intensidade costuma ser uma potencia de 2: L = 2^k
 
     -------------------------------------------------------------------------------------------------------
-    | Bits (k) | Níveis de intensidade (L = 2^k) | Tipo de imagem                                         |
-    -------------------------------------------------------------------------------------------------------
-    | 1	       | 2	                             | Preto e branco (binária)                               |
-    | 2	       | 4	                             | Tons simples de cinza                                  |
-    | 8	       | 256	                         | Imagem em escala de cinza                              |
-    | 24       | 16.777.216	                     | Imagem colorida RGB (8 bits por canal: 3 × 8 = 24)     |
+    | Bits (k) | Níveis de intensidade (L = 2^k)     | Tipo de imagem                                      |
+    ------------------------------------------------------------------------------------------------------
+    | 1	       | 2	                             | Preto e branco (binária)                            |
+    | 2	       | 4	                             | Tons simples de cinza                               |
+    | 8	       | 256	                             | Imagem em escala de cinza                           |
+    | 24       | 16.777.216	                     | Imagem colorida RGB (8 bits por canal: 3 × 8 = 24)  |
     -------------------------------------------------------------------------------------------------------
 
 - O numero de bits necessarios para o armanezamento da imagem é b = M x N x k
