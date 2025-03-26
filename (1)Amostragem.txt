@@ -1,3 +1,4 @@
+https://youtu.be/KvVf4tY5kCk
 Importante a partir do minuto 51:00 da videoaula
 
 - A imagem é uma função de intensidade bidimensional: f(x, y), onde: f é a amplitude e x, y são as coordenadas específicas;

@@ -1,0 +1,38 @@
+https://www.youtube.com/watch?v=wULuCK8m1aA
+
+Representação:
+    - Os 4 vizinhos ortogonais (horizontal e vertical) de p são:
+        - (i + 1, j) -> Vizinho de cima; 
+        - (i - 1, j) -> Vizinho de baixo;
+        - (i, j + 1) -> Vizinho da direita;
+        - (i, j - 1) -> Vizinho da esquerda.
+    - Os 4 vizinhos diagonais de p são:
+        - (i + 1, j + 1) -> inferior direita;
+        - (i - 1, j - 1) -> superior esquerda;
+        - (i - 1, j + 1) -> superior direita;
+        - (i + 1, j - 1) -> inferior esquerda.
+
+    +----------------------------------------------------+
+    |  (i - 1, j - 1)  |  (i + 1, j)  |  (i - 1, j + 1)  |
+    |----------------------------------------------------|
+    |  (i, j - 1)      |       p      |  (i, j + 1)      |
+    |----------------------------------------------------|
+    |  (i + 1, j - 1)  |  (i - 1, j)  |  (i + 1, j + 1)  |
+    +----------------------------------------------------+
+
+Adjacência:
+    - Dois pontos p e q, tem adjacência-4 ou adjacência-8 se tem a mesma intencidade e são 4-vizinhos ou 8-vizinhos.
+        - Adjacência-4: considera vizinhos horizontais e verticais.
+        - Adjacência-8: considera todos os vizinhos (inclusive diagonais).
+Caminho:
+    - Um caminho é uma sequência de pixels conectados, onde cada pixel da sequência é adjacente ao próximo, segundo 
+    algum tipo de adjacência (4 ou 8).
+        - Começa em um pixel p e termina em um pixel q;
+        - Todos os pixels intermediários devem ser:
+            - Adjacentes entre si (adjacência-4 ou adjacência-8, se todo o caminho for adjacência-4 porém tiver uma 
+            conexão de adjacência-8 todo o caminho é considerado 8)
+            - Pertencentes ao mesmo conjunto de valores (ex: mesma intensidade em tons de cinza)
+
+Borda e região:
+
+Medidas de distância:
